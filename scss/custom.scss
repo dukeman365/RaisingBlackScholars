@@ -1,73 +1,82 @@
+.jumbotron {
+  margin: 0;
+  background-color: rgb(34, 85, 39);
 
-.body{
-background-color: white;
-}
-.banner{
-  height:100px;
-}
-.nav {
-  background-color:red;
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  h1 {
+    margin: 0 40px;
+    color: white;
+    font-size: 40px;
   }
-  li{
-    display:inline;
-    float:left;
-  }
-  a{
-    font-size: 25px;
-    display:block;
-    padding:8px 20px;
-    background-color: red;
-    color:white;
-    text-align: center;
-  }
-  a:hover {
-    background-color: #111;
-}
 }
 
-.content{
-  max-width: 65%;
-  min-width:400px;
-  margin: 30px;
-
-}
-.content__element{
-  margin:10px 0px;
+.page {
+  width: auto;
+  margin: 20px;
 }
 
-.timeline {
-  background-color: white;
-  border-width: 1px;
-  border-style: solid;
-  padding: 10px;
-  max-height: 700px;
-  min-width: 200px;
-  border-radius: 20px;
-  max-width: 600px;
-
+.card {
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 3px;
+padding:0px;
+margin:0px 0px;
+width:auto;
+height:auto;
 }
-
+.fix{height:0%;}
 .article {
-  background-color: #E2E2E2;
-  border-radius: 20px;
-  border-width: 1px;
-  border-style: solid;
-  padding: 15px;
+  margin:0;
+  width:auto;
+  height:100%;
+  .article__image {
+    float: left;
+    margin: 0 20px 10px 0;
+
+  }
+  .article__content{
+    max-width:50%;
+    margin:auto;
+  }
+}
+
+.media__buttons {
+
 
 }
 
-.article__image {
-  float: left;
-  clear: left;
-  overflow: auto;
-  margin: 0px 20px 10px 0px;
+.twit {
 
 }
 
-.article__body {
-  p {}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+
+  ul {
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 3px 8px 5px #4e4e4e,;
+  }
+
+  li {
+    float: left;
+
+    a {
+      color: green;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      background-color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #006700;
+      color: white;
+    }
+  }
 }
